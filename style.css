@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  background: rgb(164, 229, 255);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  flex: auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(59, 191, 244);
+  /* background: rgb(164, 229, 255); */
+}
+
+.hover {
+  background: rgb(59, 191, 244);
+}
