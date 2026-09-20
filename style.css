@@ -23,10 +23,6 @@ body {
 
 .container > div {
   flex: auto;
-  border: 1px solid rgb(59, 191, 244);
-  /* background: rgb(164, 229, 255); */
-}
-
-.hover {
-  background: rgb(59, 191, 244);
+  border: 1px solid rgb(215, 231, 242);
+  background: rgb(234, 252, 255);
 }

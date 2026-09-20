@@ -12,19 +12,20 @@ for (let div of divs) {
   container.appendChild(div);
 }
 
-// Add hover effect on the divs
+// Add hover effect on the divs with random rgb colors.
 container.addEventListener("mouseover", (event) => {
-  event.target.classList.add("hover");
-});
-container.addEventListener("mouseout", (event) => {
-  event.target.classList.remove("hover");
+  const red = Math.floor(Math.random() * 255);
+  const green = Math.floor(Math.random() * 255);
+  const blue = Math.floor(Math.random() * 255);
+  const color = `rgb(${red},${green},${blue})`;
+  event.target.style.background = color;
 });
 
 // Add ability to resize
 const resize = document.querySelector(".resize");
 resize.addEventListener("click", () => {
   try {
-    // Get the new size from the user and check if it's in proper range.
+    // Get the new size from the user and check if it's within valid range.
     let size = Number(
       prompt("Enter the number of squares per side for the new grid"),
     );
